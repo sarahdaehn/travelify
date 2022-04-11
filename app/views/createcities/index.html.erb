@@ -1,14 +1,30 @@
+
+
+
+
 <p style="color: green"><%= notice %></p>
 
-<h1>Createcities</h1>
+     <h5 class="card-title">Createcities </h5>
+
 
 <div id="createcities">
   <% @createcities.each do |createcity| %>
+    <div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    
+
+
     <%= render createcity %>
+    <div class="card-body">
+    
     <p>
       <%= link_to "Show this createcity", createcity %>
     </p>
+    <%= link_to "New createcity", new_createcity_path %>
+    </div>
   <% end %>
 </div>
+</div>
 
-<%= link_to "New createcity", new_createcity_path %>
+</div>
+</div>
