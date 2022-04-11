@@ -1,0 +1,2 @@
+class Createcity < ApplicationRecord
+end
